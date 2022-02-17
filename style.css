@@ -30,7 +30,7 @@ body {
     border: none;
 }
 
-p {
+p, h6 {
     font-family: 'Dolce Vita Bold';
 }
 
@@ -48,7 +48,7 @@ p {
     margin-top: 39.5px;
 }
 
-.titulos {
+.titulos, .artist-content .art p {
     font-family: 'Dolce Vita Bold';
     color: #fc1297;
     text-shadow: #5973f7 1.25px 1.25px;
@@ -71,7 +71,7 @@ h3{
     text-shadow: #5973f7 0.5px 0.5px;
     text-align: center;
 }
-.text-lanzamiento {
+.text-lanzamiento, .text-historia {
     margin-left: 25%;
     margin-right: 25%;
     color:#d8269d;
@@ -104,3 +104,44 @@ h3{
     display: flex;
     justify-content: center;
 }
+
+.titulos-novedades {
+    color: #fc1297;
+    background-color: #5973f7;
+}
+
+h5, h6 {
+    text-align: center;
+    color: #fc1297;
+    background-color: yellow;
+}
+
+.texto-novedades {
+    text-align: center;
+}
+
+.artist-content{
+    display: grid;
+    grid-template-rows: repeat(2, 250px);
+    grid-template-columns: repeat(3, 250px);
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding:15px;
+}
+
+.art img {
+    width: 200px;
+    border-radius: 100%;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.art img:hover {
+    transform: scale(1.07);
+}
+
+.artist-content .art p{
+    text-align: center;
+}
+
